@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any
 from PIL import Image
 from category import Category
 from entry import Entry

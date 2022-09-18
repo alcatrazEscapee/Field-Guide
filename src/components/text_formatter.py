@@ -53,8 +53,8 @@ class TextFormatter:
                 self.matching_tags('<a href="%s">' % key[2:], '</a>')
             elif key.startswith('l:'):
                 link = key[2:]
-                link = link.replace('#', '.html#anchor-') if '#' in link else link + '.html'
-                self.matching_tags('<a href="../%s">' % link, '</a>')
+                link = link.replace('#', '#anchor-') if '#' in link else link
+                self.matching_tags('<a href="../../%s">' % link, '</a>')
             elif key == 'thing':
                 self.color_tags('#490')
             elif key == 'item':

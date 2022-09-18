@@ -30,7 +30,7 @@ class Loader:
         path = suffix(path, '.png')
 
         img.save(util.path_join(self.output_dir, path))
-        return util.path_join('../../', path)
+        return util.path_join('../../../', path)
     
     def save_gif(self, path: str, images: List[Image.Image]) -> str:
         """ Saves multiple images to a .gif based on an identifier. Returns the relative path to that location. """
@@ -42,7 +42,7 @@ class Loader:
         path = util.path_join('_images', path.replace('/', '_'))
 
         first.save(util.path_join(self.output_dir, path), save_all=True, append_images=others, duration=1000, loop=0, disposal=2)
-        return util.path_join('../../', path)
+        return util.path_join('../../../', path)
 
     def load_block_state(self, path: str) -> Any: return self.load_resource(path, 'blockstates', 'assets', '.json', json_reader)
     def load_block_model(self, path: str) -> Any: return self.load_resource(path, 'models/block', 'assets', '.json', json_reader)

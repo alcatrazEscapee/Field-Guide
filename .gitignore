@@ -11,6 +11,7 @@
 !/src/**/*.py
 !/assets/*.png
 !/assets/lang/*.json
+!/assets/templates/*.html
 
 !/style.css
 !/redirect.html

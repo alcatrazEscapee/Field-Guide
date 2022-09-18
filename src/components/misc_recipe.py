@@ -42,7 +42,7 @@ def format_misc_recipe_from_data(context: Context, buffer: List[str], identifier
     buffer.append("""
     <div class="d-flex align-items-center justify-content-center">
         <div class="crafting-recipe">
-            <img src="../../_images/1to1.png" />
+            <img src="../../../_images/1to1.png" />
             <div class="crafting-recipe-item misc-recipe-pos-in">
                 <span href="#" data-toggle="tooltip" title="%s" class="crafting-recipe-item-tooltip"></span>
                 %s
